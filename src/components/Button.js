@@ -5,8 +5,8 @@ class Button extends React.Component {
     static contextType = LanguageContext;
 
     render() {
-        console.log(this.context);
-        return <button>Submit</button>;
+        const text = this.context === "english" ? "Submit" : "Submishi";
+        return <button>{text}</button>;
     }
 }
 
